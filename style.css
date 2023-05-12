@@ -59,3 +59,24 @@ td{
     padding-top: 6.5vh;
     border-left: 3px solid white;
 }
+td {
+    font-size: 40px;
+}
+a {   
+    color: rgb(255, 255, 255);   
+    text-decoration: none;
+
+}
+
+a:active {
+    text-decoration: none;
+
+    color: rgb(102, 102, 102);
+}
+
+a[tabindex]:focus {
+    text-decoration: none;
+
+    color:blue;
+    outline: none;
+}

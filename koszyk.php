@@ -18,16 +18,29 @@
         <td><a href="kontakt.html"> Kontakt</a></td>
     </tr>
     </table>
-    <div class="lalique">lalique</div>
+    <div class="lalique">Logowanie</div>
         
     </header>
     <section>
-        <article style="font-size: 33px;"> W naszym sklepie znajduja sie
-            same najlepsze napoje. 
-            Sprowadzamy je z zagranicy
-            z państw takich jak Monako.
-            Zapraszamy do kupna!
-            </article>
+        <article> Witamy w sklepie napojów! Produkt na dziś:
+        <?php
+        $servername = "localhost";
+$username = "root";
+$password = "";
+$link = mysqli_connect($servername, $username, $password, "sklep_internetowy_lailaq");
+if (!$link) {
+die('AWARIA! AWARIA! CAUTION! AWARIA! AWARIA! ' . mysql_error());
+}else{
+
+$zapytanie = mysqli_query($link,"SELECT * FROM `napoje` WHERE 1;");
+$row = mysqli_fetch_array($zapytanie);
+
+echo $row[2] ;
+echo '<br><img src="img/'.$row[0].'.png" style="width:170px">';;
+;
+}
+?>
+        </article>
     </section>
   
     <footer></footer>

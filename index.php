@@ -11,14 +11,14 @@
     <header>
         <table>
         <tr>
-        <td><img src="img_208967.png" style="width:50px"> </a> </td>
+        <td><a href="koszyk.php"><img src="img_208967.png" style="width:50px"> </a> </td>
         <td><a href="index.php"> Główna</a></td>
         <td><a href="sklep.php"> Sklep</a></td>
         <td><a href="o_nas.html"> O nas</a></td>
         <td><a href="kontakt.html"> Kontakt</a></td>
     </tr>
     </table>
-    <div class="lalique">lalique</div>
+    <div class="lalique">Logowanie</div>
         
     </header>
     <section>
